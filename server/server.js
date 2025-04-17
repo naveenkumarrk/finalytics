@@ -12,7 +12,7 @@ const app = express();
 
 // CORS configuration
 app.use(cors({
-  origin: ['http://localhost:5173'], // Your Vite client URL
+  origin: ['http://localhost:5173', 'https://finalytics-lac.vercel.app', 'https://finalytics-gtve.vercel.app'], // Your Vite client URL
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
   allowedHeaders: ['Content-Type', 'Authorization'],
   credentials: true
