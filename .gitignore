@@ -1,0 +1,6 @@
+# JEnv local Java version configuration file
+/server/.env
+/client/.env
+
+./server/.env
+./client/.env
