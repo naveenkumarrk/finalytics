@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+body{
+    font-family: poppins;
+    /* background-color: #163200; */
+}
+
+
+@font-face {
+    font-family: 'poppins';
+    src: url('./assets/fonts/poppins.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
