@@ -10,7 +10,8 @@ import {
   LogIn, 
   UserPlus, 
   User,
-  ChevronDown
+  ChevronDown,
+  BadgeAlert, 
 } from "lucide-react";
 
 const Navbar = () => {
@@ -83,6 +84,7 @@ const Navbar = () => {
               <>
                 <NavLink to="/dashboard" icon={<Home size={16} />} text="Dashboard" active={isActive('/dashboard')} />
                 <NavLink to="/loan-eligibility" icon={<CreditCard size={16} />} text="Loan Eligibility" active={isActive('/loan-eligibility')} />
+                <NavLink to="/fraud-detection" icon={<BadgeAlert  size={16} />} text="Fraud Detection & Bot" active={isActive('/fraud-detection')} />
                 
                 {/* Profile dropdown */}
                 <div className="relative ml-3">
@@ -166,6 +168,7 @@ const Navbar = () => {
                 
                 <MobileNavLink to="/dashboard" icon={<Home size={20} />} text="Dashboard" active={isActive('/dashboard')} />
                 <MobileNavLink to="/loan-eligibility" icon={<CreditCard size={20} />} text="Loan Eligibility" active={isActive('/loan-eligibility')} />
+                <MobileNavLink to="/fraud-detection" icon={<BadgeAlert size={20} />} text="Fraud Detection" active={isActive('/fraud-detection')} />
                 <MobileNavLink to="/profile" icon={<User size={20} />} text="Profile" active={isActive('/profile')} />
                 
                 <button

@@ -11,6 +11,8 @@ import Register from './components/Register';
 import ProtectedRoute from './components/ProtectedRoute';
 import { useAuth } from './context/AuthContext';
 import Profile from './components/Profile';
+import FraudDetectionDashboard from './components/FraudDetection';
+
 
 const App = () => {
   return (
@@ -49,6 +51,14 @@ const App = () => {
             element={
               <ProtectedRoute>
                 <LoanEligibility />
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/fraud-detection"
+            element={
+              <ProtectedRoute>
+                <FraudDetectionDashboard />
               </ProtectedRoute>
             }
           />
